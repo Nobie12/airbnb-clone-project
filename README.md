@@ -143,7 +143,7 @@ DELETE /reviews/{review_id}/   # Delete a review
 ### 📬 Contact
 - For contributions, issues, or queries, feel free to open an issue or contact the maintainers.
 
-- > Built with 💻 using Django & GraphQL, optimized for performance and developer happiness.
+  > Built with 💻 using Django & GraphQL, optimized for performance and developer happiness.
 
 
 ### ✅ Ready to Use
