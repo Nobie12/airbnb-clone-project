@@ -50,6 +50,58 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 
 ---
 
+
+## 🔐 API Security
+
+Security is at the core of the Airbnb Clone backend to protect users, properties, transactions, and all sensitive operations. The following key security measures will be implemented:
+
+### 1. **Authentication**
+- **Technology**: Token-based authentication using **JWT (JSON Web Tokens)**.
+- **Why it matters**: Ensures that only registered users can access their own data and perform actions like booking or leaving a review.
+
+### 2. **Authorization**
+- **Role-Based Access Control (RBAC)**: Admins, hosts, and guests will have different levels of access.
+- **Why it matters**: Prevents unauthorized access to sensitive resources (e.g., only a property owner should be able to delete their listing).
+
+### 3. **Rate Limiting**
+- **Tool**: Django REST Framework Throttling or a service like **API Gateway/Nginx** + **Redis**.
+- **Why it matters**: Protects the API from brute-force attacks, spamming, or abuse by limiting how often a user can call certain endpoints.
+
+### 4. **Data Validation & Sanitization**
+- **Tool**: Django’s built-in validators and serializers.
+- **Why it matters**: Prevents injection attacks (SQL, script injection) and ensures only safe, clean data enters the system.
+
+### 5. **HTTPS Everywhere**
+- **Tool**: Enforced via Nginx + SSL Certificates (Let's Encrypt).
+- **Why it matters**: Encrypts data in transit to prevent man-in-the-middle attacks, especially important during login and payment.
+
+### 6. **Payment Security**
+- **Tool**: Integration with a secure payment processor like **Stripe** or **PayPal**.
+- **Why it matters**: Sensitive credit card information is handled securely and in compliance with **PCI DSS** standards.
+
+### 7. **CSRF & CORS Protection**
+- **CSRF**: Handled for authenticated POST/PUT requests in forms.
+- **CORS**: Whitelisted domains using Django CORS headers.
+- **Why it matters**: Prevents cross-site request forgery and data leakage between unauthorized origins.
+
+### 8. **Audit Logs & Monitoring**
+- **Tool**: Logging user actions and failures (e.g., login attempts).
+- **Why it matters**: Helps trace malicious activity, detect data breaches, and maintain accountability.
+
+---
+
+### 🚨 Why API Security Matters for This Project
+
+| Project Feature     | Why Security is Critical                                      |
+|---------------------|---------------------------------------------------------------|
+| **User Management** | Protect personal data like emails, passwords, and profiles.   |
+| **Properties**      | Prevent fake listings, unauthorized edits, or deletions.      |
+| **Bookings**        | Stop booking hijacking, duplication, or denial-of-service.    |
+| **Payments**        | Safeguard financial data and prevent fraud.                   |
+| **Reviews**         | Prevent spam or malicious content that can harm user trust.   |
+
+
+
 ## ⚙️ Technology Stack
 
 - **Backend Framework**: Django  
