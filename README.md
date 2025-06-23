@@ -144,7 +144,7 @@ This setup improves developer productivity and system reliability. You can now c
 git add README.md
 git commit -m "Added CI/CD Pipeline section to README"
 git push origin main
-
+```
 
 
 ## ⚙️ Technology Stack
