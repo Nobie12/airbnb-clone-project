@@ -8,12 +8,12 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 
 ## 🏆 Project Goals
 
-- **User Management**: Secure registration, login, and user profile handling.
-- **Property Management**: Create, update, delete, and retrieve property listings.
-- **Booking System**: Allow users to reserve and manage bookings.
-- **Payment Processing**: Integrate and manage secure payment transactions.
-- **Review System**: Enable users to review and rate properties.
-- **Data Optimization**: Ensure efficient database operations and fast API responses.
+- **User Management**: Secure registration, login, and user profile handling.  
+- **Property Management**: Create, update, delete, and retrieve property listings.  
+- **Booking System**: Allow users to reserve and manage bookings.  
+- **Payment Processing**: Integrate and manage secure payment transactions.  
+- **Review System**: Enable users to review and rate properties.  
+- **Data Optimization**: Ensure efficient database operations and fast API responses.  
 
 ---
 
@@ -52,89 +52,39 @@ The backend for the **Airbnb Clone** project is designed to provide a robust and
 
 ## ⚙️ Technology Stack
 
-- **Backend Framework**: Django
-- **API Development**: Django REST Framework, GraphQL
-- **Database**: PostgreSQL
-- **Asynchronous Tasks**: Celery
-- **Caching & Sessions**: Redis
-- **Containerization**: Docker
-- **CI/CD**: Automated pipelines for testing and deployment
+- **Backend Framework**: Django  
+- **API Development**: Django REST Framework, GraphQL  
+- **Database**: PostgreSQL  
+- **Asynchronous Tasks**: Celery  
+- **Caching & Sessions**: Redis  
+- **Containerization**: Docker  
+- **CI/CD**: Automated pipelines for testing and deployment  
 
 ---
 
 ## 👥 Team Roles
 
-- **Backend Developer**: API, logic, database schema implementation
-- **Database Administrator**: Schema design, optimization, indexing
-- **DevOps Engineer**: Deployment, scaling, monitoring
-- **QA Engineer**: Automated and manual testing for quality assurance
+- **Backend Developer**: API, logic, database schema implementation  
+- **Database Administrator**: Schema design, optimization, indexing  
+- **DevOps Engineer**: Deployment, scaling, monitoring  
+- **QA Engineer**: Automated and manual testing for quality assurance  
 
 ---
 
 ## 📈 API Documentation Overview
 
-- **REST API**: Based on OpenAPI standard. Includes all endpoints for CRUD operations.
+- **REST API**: Based on OpenAPI standard. Includes all endpoints for CRUD operations.  
 - **GraphQL**: For dynamic and efficient data fetching.
 
 ---
 
 ## 📌 Endpoints Overview
 
-### Users
-GET /users/ - List all users
-POST /users/ - Create a new user
-GET /users/{user_id}/ - Retrieve a user
-PUT /users/{user_id}/ - Update a user
-DELETE /users/{user_id}/ - Delete a user
+### 🔐 Users
 
-shell
-Copy
-Edit
-
-### Properties
-GET /properties/ - List all properties
-POST /properties/ - Create a new property
-GET /properties/{property_id}/ - Retrieve a property
-PUT /properties/{property_id}/ - Update a property
-DELETE /properties/{property_id}/ - Delete a property
-
-shell
-Copy
-Edit
-
-### Bookings
-GET /bookings/ - List all bookings
-POST /bookings/ - Create a new booking
-GET /bookings/{booking_id}/ - Retrieve a booking
-PUT /bookings/{booking_id}/ - Update a booking
-DELETE /bookings/{booking_id}/ - Delete a booking
-
-shell
-Copy
-Edit
-
-### Payments
-POST /payments/ - Process a payment
-
-shell
-Copy
-Edit
-
-### Reviews
-GET /reviews/ - List all reviews
-POST /reviews/ - Create a new review
-GET /reviews/{review_id}/ - Retrieve a review
-PUT /reviews/{review_id}/ - Update a review
-DELETE /reviews/{review_id}/ - Delete a review
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 📬 Contact
-
-For contributions, issues, or queries, feel free to open an issue or contact the maintainers.
+```http
+GET    /users/               # List all users  
+POST   /users/               # Create a new user  
+GET    /users/{user_id}/     # Retrieve a user  
+PUT    /users/{user_id}/     # Update a user  
+DELETE /users/{user_id}/     # Delete a user  
