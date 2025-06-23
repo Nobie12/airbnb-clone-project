@@ -126,7 +126,7 @@ DELETE /bookings/{booking_id}/  # Delete a booking
 POST /payments/   # Process a payment  
 ```
 
-🌟 Reviews
+### 🌟 Reviews
 
 ```http
 GET    /reviews/               # List all reviews  
@@ -134,17 +134,17 @@ POST   /reviews/               # Create a new review
 GET    /reviews/{review_id}/   # Retrieve a review  
 PUT    /reviews/{review_id}/   # Update a review  
 DELETE /reviews/{review_id}/   # Delete a review
+```
 
-📄 License
+### 📄 License
 
 - This project is licensed under the MIT License.
 
-📬 Contact
+### 📬 Contact
 - For contributions, issues, or queries, feel free to open an issue or contact the maintainers.
 
 > Built with 💻 using Django & GraphQL, optimized for performance and developer happiness.
 
-Edit
 
 ### ✅ Ready to Use
 
