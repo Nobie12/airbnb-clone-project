@@ -88,7 +88,7 @@ POST   /users/               # Create a new user
 GET    /users/{user_id}/     # Retrieve a user  
 PUT    /users/{user_id}/     # Update a user  
 DELETE /users/{user_id}/     # Delete a user  
-
+```
 
 ### 🏘️ Properties
 
@@ -98,17 +98,7 @@ POST   /properties/              # Create a new property
 GET    /properties/{property_id}/ # Retrieve a property  
 PUT    /properties/{property_id}/ # Update a property  
 DELETE /properties/{property_id}/ # Delete a property  
-
-
-### 📅 Bookings
-
-```http
-GET    /bookings/               # List all bookings  
-POST   /bookings/               # Create a new booking  
-GET    /bookings/{booking_id}/  # Retrieve a booking  
-PUT    /bookings/{booking_id}/  # Update a booking  
-DELETE /bookings/{booking_id}/  # Delete a booking
-
+```
 
 ### 📅 Bookings
 
@@ -118,13 +108,23 @@ POST   /bookings/               # Create a new booking
 GET    /bookings/{booking_id}/  # Retrieve a booking  
 PUT    /bookings/{booking_id}/  # Update a booking  
 DELETE /bookings/{booking_id}/  # Delete a booking
+```
 
+### 📅 Bookings
 
-💳 Payments
+```http
+GET    /bookings/               # List all bookings  
+POST   /bookings/               # Create a new booking  
+GET    /bookings/{booking_id}/  # Retrieve a booking  
+PUT    /bookings/{booking_id}/  # Update a booking  
+DELETE /bookings/{booking_id}/  # Delete a booking
+```
+
+### 💳 Payments
 
 ```http
 POST /payments/   # Process a payment  
-
+```
 
 🌟 Reviews
 
@@ -148,4 +148,4 @@ Edit
 
 ### ✅ Ready to Use
 
-You can now copy and paste this into your `README.md` file. It’s fully structured, readable, and GitHub
+- You can now copy and paste this into your `README.md` file. It’s fully structured, readable, and GitHub
