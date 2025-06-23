@@ -88,3 +88,64 @@ POST   /users/               # Create a new user
 GET    /users/{user_id}/     # Retrieve a user  
 PUT    /users/{user_id}/     # Update a user  
 DELETE /users/{user_id}/     # Delete a user  
+
+
+### 🏘️ Properties
+
+```http
+GET    /properties/               # List all properties  
+POST   /properties/              # Create a new property  
+GET    /properties/{property_id}/ # Retrieve a property  
+PUT    /properties/{property_id}/ # Update a property  
+DELETE /properties/{property_id}/ # Delete a property  
+
+
+### 📅 Bookings
+
+```http
+GET    /bookings/               # List all bookings  
+POST   /bookings/               # Create a new booking  
+GET    /bookings/{booking_id}/  # Retrieve a booking  
+PUT    /bookings/{booking_id}/  # Update a booking  
+DELETE /bookings/{booking_id}/  # Delete a booking
+
+
+### 📅 Bookings
+
+```http
+GET    /bookings/               # List all bookings  
+POST   /bookings/               # Create a new booking  
+GET    /bookings/{booking_id}/  # Retrieve a booking  
+PUT    /bookings/{booking_id}/  # Update a booking  
+DELETE /bookings/{booking_id}/  # Delete a booking
+
+
+💳 Payments
+
+```http
+POST /payments/   # Process a payment  
+
+
+🌟 Reviews
+
+```http
+GET    /reviews/               # List all reviews  
+POST   /reviews/               # Create a new review  
+GET    /reviews/{review_id}/   # Retrieve a review  
+PUT    /reviews/{review_id}/   # Update a review  
+DELETE /reviews/{review_id}/   # Delete a review
+
+📄 License
+
+- This project is licensed under the MIT License.
+
+📬 Contact
+- For contributions, issues, or queries, feel free to open an issue or contact the maintainers.
+
+> Built with 💻 using Django & GraphQL, optimized for performance and developer happiness.
+
+Edit
+
+### ✅ Ready to Use
+
+You can now copy and paste this into your `README.md` file. It’s fully structured, readable, and GitHub
